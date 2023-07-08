@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: rgb(245, 240, 240);
+    justify-content: center;    
+    align-items: center;
+    /* padding: 0 10px; */
+    box-shadow: 1px solid #dbdbdb;
+}
+
+nav .logo a {
+    width: 32px;
+    color: black;
+    padding: 10px 15px;
+
+}
+.search a {
+    width: 35px;
+    padding: 10px 15px;
+    color: darkgray;
+}
+.cart a {
+    width: 52px;
+    padding: 10px 15px;
+    color: darkgray;
+}
+
+nav .dropdown-menu {
+    position: relative;
+    display: flex;
+}
+nav .dropdown-menu a {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+    transition: all ease 0.5s;
+    font-size: 18px;
+    text-decoration: none;
+    color: #42424a;
+}
+
+nav .dropdown-menu a:hover {
+    color: #ff8aff;
+}
+
+nav .dropdown-menu .sub-menu {
+    position: absolute;
+    width: 300px;
+    background-color: blueviolet;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease .5s;
+    
+}
+nav .dropdown-menu a:hover .sub-menu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0; 
+}
+
+nav .dropdown-menu .sub-menu li  {
+    margin: 0;
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+} 
+
+section .mac {
+    margin: 8px 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px 0;
+
+}
+.top-content {
+    background-color: white;
+    padding: 8px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+section .mac .macbook {
+    background: url('images/macBook15.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top bottom;
+    background-color: #666666;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: top-center;
+    background-color: #0a0707;
+    padding-bottom: 8px;
+    margin: 15px 0;
+    height: 550px;
+    display: flex;
+    flex-direction: column;  
+}
+img {
+    width: 100%;
+    height: 300px;
+    padding: 40px 0;
+    background-size: cover;
+    background-position: center;
+}
+button {
+    color: rgb(0, 123, 255);
+    border: none;
+    font-size: 16px;
+}
+button:hover {
+    text-decoration: underline;
+}
+
+.visionPro {
+    background: url('images/visionPro.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+    margin: 8px 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    height: 550px;
+    width: 100%;
+    padding: 400px 0 100px 0;
+    color: rgb(10, 10, 10);
+}
+
+.iphone14 {
+    margin: 8px 5px;
+    background-color: rgb(14, 24, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    padding-top: 45px;
+    color: rgb(188, 174, 201);
+}
+.imgi {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.grid {
+    margin: 8px 5px;
+    background-color: rgb(245, 239, 243);
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 1em;
+}
+.grid .grid-images {
+    justify-content: space-around;
+    text-align: center;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 600px;
+}
+
+/*.grid .grid-images-one {
+
+    margin: 8px 5px;
+    justify-items: center;
+    align-items: center;  
+}
+.grid .grid-images-two {
+    
+    margin: 8px 5px;
+    justify-items: center;
+    align-items: center;  
+}
+.grid .grid-images-three {
+    
+    margin: 8px 5px;
+    justify-items: center;
+    align-items: center;
+} */
+.grid-images1 {
+    background-image: url('images/Mac-Studio_2022-03-15_at_20.28.02.jpeg');
+    color: rgb(235, 241, 241);
+    
+} 
+.grid-images2 {
+    background-image: url('images/mac-pro-1-1500.webp');
+    color: white;
+    
+} 
+.grid-images3 {
+    background-image: url('images/trade-in-og-202205.jpeg');
+    color: rgb(78, 73, 73);
+    
+} 
+.grid-images4 {
+    background-image: url('images/Watch__gi7uzrvkt5e2_og.png');
+    color: white;
+    
+} 
+.grid-images5 {
+    background-image: url('images/Apple-racial.jpg');
+    color: white;
+    
+} 
+.grid-images6 {
+    background-image: url('images/Apple-card.jpg');
+    color: rgb(20, 17, 17);
+    
+} 
+
+/*.grid-images {
+    width: auto;
+    display: block;
+    background: steelblue;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    border: skyblue 1px solid;
+} */
+
+.slider {
+    position: relative;
+    margin: 8px 0;
+    background-color: wheat;
+    overflow: hidden;
+}
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;   
+}
+.slider-images .img-slide {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    align-items: center;
+}
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+    opacity: .5;
+    font-size: 20px;
+}
+.btn.prev {
+    left: 10px;
+}
+.btn.next {
+    right: 10px;
+}
+.btn:hover {
+    opacity: 1;
+}
+footer {
+    margin: 5px 8px;
+}
+.footer-paragraph {
+    padding: 5px 100px;
+}
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 100px;
+}
+footer .footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 100px;
+}
+footer .shopping p {
+    margin: 5px 100px;
+}
+
+.bar-btn {
+    float: right;
+    margin-right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#bar {
+    display: none;
+}
+
+@media screen and (max-width: 952px) {
+    .grid {
+        display: block;
+    }
+    .mac {
+        white-space: nowrap;
+    }
+    nav .logo a {
+        padding-left: 50px;
+    }
+    nav .dropdown a {
+        font-size: 16px;
+    }
+    .bar-btn {
+        display: block;
+    }
+}
+@media  screen and (max-width: 858px){
+    .grid {
+        display: block;
+    }
+    .bar-btn {
+        display: block;
+    }
+    
+    #bar {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav .dropdown a {
+        display: block;
+        font-size: 20px;
+        color: #008;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    .dropdown a:hover, .dropdown a.active {
+        background: none;
+        color: #f637e0;
+        transition: all .5s ease-in;
+    } 
+
+    }
+    #bar:checked ~ .dropdown {
+        left: 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+
+    
+
+
+
+
