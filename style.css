@@ -33,11 +33,11 @@ nav .logo a {
     color: darkgray;
 }
 
-nav .dropdown-menu {
-    position: relative;
+/* nav .dropdown-menu {
     display: flex;
 }
 nav .dropdown-menu a {
+    position: relative;
     display: inline-block;
     list-style: none;
     margin: 0 10px;
@@ -49,9 +49,9 @@ nav .dropdown-menu a {
 
 nav .dropdown-menu a:hover {
     color: #ff8aff;
-}
+} 
 
-nav .dropdown-menu .sub-menu {
+nav .dropdown-menu ul.sub-menu {
     position: absolute;
     width: 300px;
     background-color: blueviolet;
@@ -60,29 +60,154 @@ nav .dropdown-menu .sub-menu {
     opacity: 0;
     z-index: -999;
     transition: all ease .5s;
-    
 }
 nav .dropdown-menu a:hover .sub-menu {
     z-index: 99;
     opacity: 1;
-    margin-top: 0; 
+    margin-top: 0;
+    display: block;
+    background: greenyellow;
 }
 
-nav .dropdown-menu .sub-menu li  {
+nav .dropdown-menu a:hover .sub-menu > li {
     margin: 0;
     padding: 15px 20px;
     display: inline-block;
     width: 100%;
-} 
-
-section .mac {
-    margin: 8px 5px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 8px 0;
-
+    display: block;
 }
+nav .dropdown-menu a:hover .sub-menu li > a {
+    margin: 0;
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+    display: block;
+}  */
+
+
+/* .dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .dropdown-menu ul li {
+    display: inline-block;
+    position: relative;
+    }
+    
+    .dropdown-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    
+    .dropdown-menu ul li:hover > a {
+    color: #fff;
+    background-color: #000;
+    }
+    
+    .dropdown-menu ul li:hover > ul {
+    display: block;
+    }
+    
+    .dropdown-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    }
+    
+    .dropdown-menu ul ul li {
+    display: block;
+    width: 300px;
+    }
+    
+    .dropdown-menu ul ul li a {
+    padding: 10px 20px;
+    color: #000;
+    font-weight: normal;
+    }
+    
+    .dropdown-menu ul ul li a:hover {
+    color: #fff;
+    background-color: #000;
+    } */
+
+    .dropdown-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .dropdown-menu ul li {
+        display: inline-block;
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    .dropdown-menu ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .dropdown-menu ul li:hover > a {
+        color: #fff;
+        background-color: #eccfcf;
+        border: none;
+        outline: none;
+        transition: all ease-in-out .5s;
+    }
+    
+    .dropdown-menu ul li:hover > .dropdown {
+        display: block; 
+    }
+    
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        width: 800px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .column {
+        float: left;
+        width: 30%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .column h3 {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .column a {
+        display: block;
+        margin-bottom: 5px;
+        color: #000;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .column a:hover {
+        color: #fff;
+        background-color: #000;
+    }
+
+
 .top-content {
     background-color: white;
     padding: 8px 0;
@@ -90,7 +215,7 @@ section .mac {
     justify-content: center;
     align-items: center;
 }
-section .mac .macbook {
+section .mac {
     background: url('images/macBook15.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
